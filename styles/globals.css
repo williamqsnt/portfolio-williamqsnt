@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(244, 244, 244);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: rgb(56, 116, 203);
+}
+
+.curseur-perso {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  background-color: rgb(137, 239, 204);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.curseur-perso::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+}
